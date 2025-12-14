@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: beige;
+        }
+        header{
+            text-align: center;
+            padding:20px;
+        }
+        input[type = "text"]{
+            width: 140px;
+            border-radius: 10px 10px;
+            padding: 8px;
+            border-color: aquamarine;
+            align-content: center;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        .container, #guessSection, #guessResult{
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+        }
+        #enterBtn , #enterGuess{
+            padding: 8px;
+            border-radius: 10px 5px;
+            border-color: aqua;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: sans-serif;
+        }
+        #enterBtn:hover, #enterGuess:hover{
+            font-size: 14px;
+            color: white;
+            background-color: black;
+            border-color: teal;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Number Guesing</h1></header>
+    <hr>
+    <div class ="container">
+        <b>Enter Minimum Number : </b>
+        <input type = "text" id = "min" placeholder="Minimum Number"><br><br>
+        <b>Enter Maximum Number : </b>
+        <input type = "text" id = "max" placeholder="Maximum Number"><br><br>
+        <input type = "button" id = "enterBtn" value = "Enter"><br>
+    </div>
+    <div id = "guessSection"></div><br>
+    <div id = "guessResult"></div>
+    <script src = "javascript/guessNumber.js"></script>  
+</body>
+</html>

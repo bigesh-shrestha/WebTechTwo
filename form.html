@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/form.css">
+    <title>College Admission Form</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "heading">
+        <img src = "images\sankalpa.png" align = "center" height = "8%" width = "8%">
+        <h1 align  = "center">College Admission Form</h1>
+    </div>
+    <div class = "form">
+    <form>
+        <table border = 0 align = "center" cellspacing = "4" cellpadding = "10">
+            <tr>
+                <td><lable for = "fname"><i>First Name</i></lable></td>
+                <td><input type = "text" name = "fname" id = "fname" placeholder = "Enter first name" required></td>
+            </tr>
+            <tr>
+                <td><lable for = "Mname"><i>Middle Name</i></lable></td>
+                <td><input type = "text" name = "Mname" id = "Mname" placeholder = "Enter Middle name"></td>
+            </tr>
+            <tr>
+                <td><lable for = "Lname"><i>Last Name</i></lable></td>
+                <td><input type = "text" name = "Lname" id = "Lname" placeholder = "Enter last name" required></td>
+            </tr>
+            <tr>
+                <td><lable for = "gmail"><i>Email Address</i></lable></td>
+                <td><input type = "email" name = "gmail" id = "gmail" placeholder = "Enter Email"></td>
+            </tr>
+            <tr>
+                <td><lable for = "PhNumber"><i>Phone Number</i></lable></td>
+                <td><input type = "text" name = "PhNumber" id = "PhNumber" placeholder = "Enter Phone Number"></td>
+            </tr>
+            <tr>
+                <td><lable for = "address"><i>Address</i></lable></td>
+                <td><input type = "text" name = "address" id = "address" placeholder = "Enter Your Address" required></td>
+            </tr>
+            <tr>
+                <td><label for = "course"><i>Select a Course</i></label></td>
+                <td><select id = "course" name = "course" required>
+                    <option value = "">Select Your Course</option>
+                    <option value = "BITM">BITM</option>
+                    <option value = "BHM">BHM</option>
+                </select></td>
+            </tr>
+             <tr>
+                <td><lable for = "GuardName"><i>Gaurdian's Name</i></lable></td>
+                <td><input type = "text" name = "GuardName" id = "GuardName" placeholder = "Enter Gaurdian's Name" required></td>
+            </tr>
+            <tr>
+                <td><lable for = "GuardName"><i>Gaurdian's Contact <br>Number</i></lable></td>
+                <td><input type = "text" name = "GuardName" id = "GuardName" placeholder = "Enter Gaurdian's Contact Number" required></td>
+            </tr>
+            <tr>
+                <td colspan = "2" align = "center"> <input type = "submit" value = "Submit Form"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+    </div>    
+</body>
+</html>

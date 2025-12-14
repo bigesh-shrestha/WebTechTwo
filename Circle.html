@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Operations</title>
+    <link rel = "stylesheet" href = "css/newStyle.css">
+
+    <style>
+    
+        #circleRadius{
+            width : 120px;
+            border-radius: 10px 5px;
+            border-color: aqua;
+            text-align: center;
+            font-size: 17px;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #isSubmitBtn{
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+            padding: 8px;
+            border-radius: 10px 12px;
+            background-color: aquamarine;
+            transition: background-color 0.25s, color 0.25s, font-size 0.25s;
+        }
+        #isSubmitBtn:hover{
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        #displayOutput{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 id = "headingOne">Circle Operations</h1>
+    
+        <b>Enter Radius of the Circle:</b>
+         <input type = "text" id = "circleRadius" placeholder = "Enter Radius"><br><br>
+        <input type = "submit" id = "isSubmitBtn" value = "Enter"></center>
+   
+    <br>
+    <div id = "displayOutput"></div>
+    <script src = "javascript/circle.js"></script>
+</body>
+</html>
