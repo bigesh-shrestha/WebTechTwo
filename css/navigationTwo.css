@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: url("../images/wallpapersden.com_berserk-minimal-digital-art_1920x1080.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    background-color: aliceblue;
+    box-shadow: 3px 3px 5px #7b7a7b;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    text-decoration: none;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+nav a:hover{
+    background-color: #7b7a7b;
+    color: white;
+    font-weight: bold;
+}
+nav li:first-child{
+    margin-right: auto;
+}
