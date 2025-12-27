@@ -26,7 +26,6 @@ function generatePassword(length, uppercase, lowercase, numbers, symbols){
     PasswordDisplay.innerHTML = `Generated Password : ${password}`;
 }
 document.getElementById("createBtn").onclick = function(){
-    
         const length = Number(document.getElementById("length").value);
         const uppercase = document.getElementById("uppercase");
         const lowercase = document.getElementById("lowercase");
