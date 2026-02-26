@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel = "stylesheet" href = "css/formValidation.css">
+</head>
+<body>
+    <div class = "formSection">
+    <form id = "validateForm" method="">
+        <div class = "inputSection">
+            <label for = "nameInput">Name : </label>
+            <input type = "text" id = "nameInput" placeholder="Enter Name">
+            <div class = "error-message"></div>
+        </div>
+        <div class = "inputSection">
+            <label for = "emailInput">Email : </label>
+            <input type = "text" id = "emailInput" placeholder="Enter Email">
+            <div class = "error-message"></div>
+        </div>
+        <div class = "inputSection">
+            <label for = "passInput">Password : </label>
+            <input type = "password" id = "passInput" placeholder="Enter Password">
+            <div class = "error-message"></div>
+        </div>
+        <div class = "inputSection">
+            <label for = "repeatPass">Confirm Password : </label>
+            <input type = "password" id = "repeatPass" placeholder="Enter Password">
+            <div class = "error-message"></div>
+        </div>
+        <input type = "submit" id = "validationBtn" value = "Submit">
+    </form>
+    </div>
+    <script src = "javascript/formValidation.js" defer></script>
+</body>
+</html>

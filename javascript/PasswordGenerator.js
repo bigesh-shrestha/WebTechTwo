@@ -1,6 +1,7 @@
 
 function generatePassword(length, uppercase, lowercase, numbers, symbols){
     const PasswordDisplay = document.getElementById("PasswordDisplay");
+    const errorDisplay = document.getElementById("errorDisplay");
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz"
     const numbersList = "0123456789";
@@ -12,18 +13,18 @@ function generatePassword(length, uppercase, lowercase, numbers, symbols){
     allCharacters += numbers ? numbersList:"";
     allCharacters += symbols ? symbolsList:"";
     if(length <= 0){
-        PasswordDisplay.innerHTML = `The Length Must Be greater than zero.`
+        errorDisplay.innerHTML = `The Length Must Be greater than zero.`
         return;
     }
     if(allCharacters === ""){
-        PasswordDisplay.innerHTML = `At least one content must be selected.`
+        errorDisplay.innerHTML = `At least one content must be selected.`
         return;
     }
     for(let i = 0;i < length; i++){
         const randomLength = Math.floor(Math.random() * allCharacters.length);
         password += allCharacters[randomLength];
     }
-    PasswordDisplay.innerHTML = `Generated Password : ${password}`;
+    PasswordDisplay.value = `${password}`;
 }
 document.getElementById("createBtn").onclick = function(){
         const length = Number(document.getElementById("length").value);

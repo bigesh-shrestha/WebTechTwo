@@ -1,0 +1,23 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/berserk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#clockContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock{
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    width: 100%;
+}

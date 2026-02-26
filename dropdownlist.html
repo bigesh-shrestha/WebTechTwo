@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!--Internal CSS-->
+        <style>
+            nav{
+                border: 1px solid green;
+                height: 50px;
+                padding: 0 10px;
+            }
+            nav ul{
+                list-style-type: none;
+                height: 50px;
+                background-color: black;
+                color: white;
+            }
+            nav>ul>li{
+                float: left;
+                padding: 10px;
+                position: relative;
+            }
+            nav ul li ul li{
+                height: 2rem;
+                
+            }
+            nav ul li ul{
+                display: none;
+                height: 100px;
+                position: absolute;
+                left: 0;
+                top: 40px;
+                z-index: 1;
+            }
+            
+            nav ul li:hover ul{
+                display: block;
+            }
+        </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us
+                <ul>
+                    <li>Link One</li>
+                    <li>Link Two</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

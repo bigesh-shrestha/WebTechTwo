@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: monospace;
+    background: url('../images/rivendell.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#headingStopwatch{
+    color:rgb(236, 219, 219);
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 80px;
+    align-self: center;
+    text-shadow: 2px 3px 4px rgb(0, 0, 0);
+}
+#stopwatch-container{
+    margin-top: 25px;
+    width: 100%;
+}
+#stopwatch{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 5rem;
+    width: 100%;
+    text-shadow: 3px 3px 0px black;
+    backdrop-filter: blur(4px);
+}
+#actionBtns{
+    margin-top: 20px;
+    text-align: center;
+}
+button{
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px 5px;
+    box-shadow: 1px 2px 3px rgb(59, 59, 59);
+    transition: 0.20s ease-in;
+}
+#startBtn:hover{
+    background-color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px white;
+}
+#stopBtn:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px white;
+}
+#resetBtn:hover{
+    background-color: rgb(60, 0, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 10px white;
+}
+button:active{
+    padding: 8px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
